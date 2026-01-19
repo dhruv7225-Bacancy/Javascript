@@ -148,7 +148,7 @@ const inventory = [
     { name: "Phone", price: 500, stock: 0 },
     { name: "Mouse", price: 50, stock: 10 }
 ];
-let jd=inventory
+let total=inventory
 .filter((obj)=>{
     return obj.stock>0
 })
@@ -159,4 +159,4 @@ let jd=inventory
     acc+=obj.totalPrice
     return acc
 },0)
-console.log(jd);
+console.log(total);
